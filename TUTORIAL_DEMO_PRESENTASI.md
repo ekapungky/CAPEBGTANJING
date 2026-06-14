@@ -1,16 +1,15 @@
-# Tutorial Demo Presentasi 3 Menit
+# Tutorial Demo Presentasi
 
-1. Jalankan local server dan buka `http://localhost:8000`.
-2. Klik **Masuk ke Kota Gelap**.
-3. Jelaskan bahwa web sudah berubah dari WebGIS biasa menjadi 3D interactive driving world.
-4. Gunakan `WASD` untuk mengendarai mobil.
-5. Dekati salah satu lokasi, misalnya Tamansari atau Keraton.
-6. Tekan `Enter` untuk membuka panel cerita, haunted index, analisis spasial, dan safety note.
-7. Klik **Malam Jumat Kliwon** untuk memperlihatkan perubahan atmosfer.
-8. Klik **Mulai Mini Game Relik**, lalu drive ke relik emas.
-9. Senggol trap mata merah untuk memperlihatkan jumpscare.
-10. Tekan **Matikan Efek** jika presentasi terlalu ramai.
+1. Buka halaman GitHub Pages.
+2. Klik **Mulai Drive**.
+3. Kendalikan mobil dengan **WASD / Arrow**.
+4. Gunakan **SHIFT** untuk boost, **SPACE** untuk jump, **R** untuk respawn.
+5. Panel kiri menampilkan semua titik urban legend. Klik salah satu titik untuk teleport dan menampilkan info.
+6. Klik **Relik** untuk memulai mini game. Ambil 5 relik emas dan hindari trap merah.
+7. Klik **Malam Jumat** untuk efek fog/horor.
+8. Klik **Ghost Hunt** untuk memperkuat lampu mobil.
+9. Tekan **M** untuk mute/unmute.
 
-Kalimat demo:
+Kalimat presentasi:
 
-> Website ini bukan hanya peta 2D/3D statis, tetapi pengalaman kota 3D interaktif. Pengguna mengendarai kendaraan, membaca urban legend berdasarkan titik lokasi, melihat rute eksplorasi, zona risiko, safe zone, dan menjalankan mini game berbasis posisi spasial.
+> Web ini dikembangkan sebagai pengalaman 3D interaktif bertema urban legend Yogyakarta. Pengguna tidak hanya melihat peta, tetapi mengendarai kendaraan di world 3D, mendatangi checkpoint, membaca narasi lokasi, dan menjalankan mini game relik.
