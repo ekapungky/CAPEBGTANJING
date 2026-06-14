@@ -1,16 +1,28 @@
-# Tutorial Demo Presentasi 3 Menit
+# Tutorial Demo Presentasi — Jogja After Dark Full 3D
 
-1. Jalankan local server dan buka `http://localhost:8000`.
-2. Klik **Masuk ke Kota Gelap**.
-3. Jelaskan bahwa web sudah berubah dari WebGIS biasa menjadi 3D interactive driving world.
-4. Gunakan `WASD` untuk mengendarai mobil.
-5. Dekati salah satu lokasi, misalnya Tamansari atau Keraton.
-6. Tekan `Enter` untuk membuka panel cerita, haunted index, analisis spasial, dan safety note.
-7. Klik **Malam Jumat Kliwon** untuk memperlihatkan perubahan atmosfer.
-8. Klik **Mulai Mini Game Relik**, lalu drive ke relik emas.
-9. Senggol trap mata merah untuk memperlihatkan jumpscare.
-10. Tekan **Matikan Efek** jika presentasi terlalu ramai.
+## Alur demo 3 menit
 
-Kalimat demo:
+1. Buka web lewat localhost atau GitHub Pages.
+2. Klik **Masuk ke World 3D**.
+3. Jelaskan bahwa web ini bukan hanya peta, tetapi 3D driving world interaktif.
+4. Kendarai mobil memakai WASD.
+5. Datangi beacon urban legend, misalnya Malioboro atau Keraton.
+6. Tunjukkan info lokasi yang muncul otomatis ketika mobil masuk radius titik.
+7. Klik **Malam Jumat** untuk menunjukkan fog dan ambience horor.
+8. Klik **Ghost Hunt Mode** untuk efek senter.
+9. Klik **Mulai Relik**, lalu tabrak collectible emas.
+10. Hindari trap mata merah. Kalau kena trap atau danger tinggi, jumpscare muncul.
+11. Tekan **Respawn** jika mobil keluar arah.
 
-> Website ini bukan hanya peta 2D/3D statis, tetapi pengalaman kota 3D interaktif. Pengguna mengendarai kendaraan, membaca urban legend berdasarkan titik lokasi, melihat rute eksplorasi, zona risiko, safe zone, dan menjalankan mini game berbasis posisi spasial.
+## Kalimat penjelasan ke dosen
+
+> Website ini dikembangkan sebagai pengalaman Web 3D interaktif bertema urban legend Yogyakarta. Pengguna tidak hanya melihat titik lokasi, tetapi mengendarai mobil di world 3D, memasuki zona rawan, membaca informasi lokasi, dan menyelesaikan mini game berbasis jarak spasial. Dengan pendekatan ini, data lokasi, rute, safe zone, dan risk zone divisualisasikan dalam bentuk game-like interactive map.
+
+## Bagian yang perlu ditekankan
+
+- Three.js dipakai untuk membangun world 3D.
+- Kendaraan memakai sistem movement berbasis kecepatan, akselerasi, friction, turn, boost, dan jump.
+- Interaksi lokasi memakai radius spasial, bukan klik panel.
+- Danger meter naik ketika masuk zona rawan atau trap.
+- Safe zone menurunkan danger meter.
+- Relik menjadi collectible 3D untuk memperkuat unsur gameplay.
