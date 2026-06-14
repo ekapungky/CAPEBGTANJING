@@ -1,44 +1,8 @@
-# Jogja After Dark — Full Bruno Driving Horror
+# Jogja After Dark — 3D Drive Horror Experience
 
-Versi ini mengubah konsep WebGIS panel-heavy menjadi **3D driving horror world** seperti gaya Bruno Simon: pemain mengendarai mobil di world 3D, kamera mengikuti kendaraan, titik urban legend menjadi checkpoint, dan zona rawan menjadi trigger gameplay.
+Versi ini mengubah WebGIS horor menjadi **3D driving experience** berbasis Three.js. Konsepnya terinspirasi dari web interaktif Bruno Simon: pengguna mengendarai kendaraan di world 3D, melakukan interaksi di titik tertentu, memakai kontrol keyboard, dan membuka panel informasi/misi.
 
-## Fitur
-
-- Three.js full 3D world.
-- Mobil 3D bisa dikendarai dengan WASD / Arrow.
-- Kamera follow vehicle, cinematic, dan top-down.
-- World low-poly Jogja After Dark.
-- 10 titik urban legend/heritage Jogja.
-- Zona rawan, safe zone, rute eksplorasi, landmark 3D.
-- Mini game Relik Kutukan dengan collectible 3D.
-- Trap mata merah dan jumpscare critical-only.
-- Fog, vignette, noise, flash, mode Malam Jumat, Ghost Hunt Mode.
-- UI lebih bersih: HUD minimal, dashboard kecil, panel misi bisa dibuka/tutup.
-
-## Struktur folder
-
-```text
-jogja-after-dark-full-bruno/
-├── index.html
-├── css/
-│   └── style.css
-├── data/
-│   ├── points.js
-│   └── layers.js
-├── js/
-│   └── app.js
-├── assets/
-│   ├── img/
-│   └── audio/
-│       └── user/
-├── RUN_LOCAL_SERVER.bat
-├── TUTORIAL_DEMO_PRESENTASI.md
-└── README.md
-```
-
-## Cara menjalankan lokal
-
-Jangan dibuka langsung dengan `file://` kalau ingin stabil. Jalankan server lokal:
+## Cara menjalankan
 
 ```bash
 python -m http.server 8000
@@ -50,32 +14,55 @@ Lalu buka:
 http://localhost:8000
 ```
 
-Atau di Windows, double-click:
+Jangan buka langsung `index.html` dengan `file://`, karena module JavaScript dan audio browser lebih stabil lewat local server.
+
+## Struktur folder
 
 ```text
-RUN_LOCAL_SERVER.bat
+3D-JogjaAfterDark/
+├── assets/
+│   ├── audio/
+│   │   └── user/
+│   └── img/
+├── css/
+│   └── style.css
+├── data/
+│   ├── layers.js
+│   └── points.js
+├── js/
+│   └── app.js
+├── index.html
+├── README.md
+└── RUN_LOCAL_SERVER.bat
 ```
 
-## Cara upload ke GitHub Pages
+## Fitur utama
 
-1. Extract ZIP.
-2. Copy semua isi folder ke root repository GitHub kamu.
-3. Pastikan file `index.html` berada di root repo, bukan di dalam subfolder tambahan.
-4. Commit dan push.
-5. Buka GitHub Pages repo kamu.
+- World 3D low-poly kota Jogja berbasis Three.js.
+- Mobil horror drive dengan kontrol WASD/Arrow.
+- Kamera follow, cinematic, dan top view.
+- Landmark 3D untuk 10 titik urban legend/heritage.
+- Rute 3D: sumbu utama, loop heritage, dan ekstensi Kotagede.
+- Zona rawan 3D dan safe zone.
+- Mini game relik: kumpulkan 5 relik dan hindari 2 trap mata merah.
+- Danger Meter, sanity, speedometer, minimap, dan panel lokasi.
+- Jumpscare critical-only agar tidak spam saat presentasi.
+- Tombol aman: mute, respawn, reset world, dan matikan efek.
 
 ## Kontrol
 
-- `W` / Arrow Up: maju
-- `S` / Arrow Down: mundur/rem
-- `A` / Arrow Left: belok kiri
-- `D` / Arrow Right: belok kanan
-- `SHIFT`: boost
-- `SPACE`: lompat
-- `ENTER`: buka info lokasi terdekat
-- `R`: respawn
-- `M`: mute/unmute
+- `WASD` / `Arrow`: mengendarai mobil.
+- `Shift`: boost.
+- `Ctrl`: rem.
+- `Space`: lompat.
+- `Enter`: interaksi saat dekat lokasi.
+- `R`: respawn.
+- `M`: mute/unmute.
 
-## Catatan presentasi
+## Catatan GitHub
 
-Narasi horor diposisikan sebagai **urban storytelling**, sedangkan aspek akademiknya tetap bisa dijelaskan sebagai geovisualisasi 3D, waypoint, rute, zona risiko, safe zone, dan interaksi spasial berbasis jarak.
+Kalau repo kamu sudah punya audio seperti `assets/audio/user/*.wav`, biarkan tetap ada. Kode ini otomatis mencoba memutar audio tersebut. Kalau file audio belum ada, web tetap jalan; hanya audio tertentu yang tidak bunyi.
+
+## Catatan akademik presentasi
+
+Narasi hantu digunakan sebagai **urban storytelling**. Bagian yang bisa diklaim secara teknis adalah implementasi world 3D, interaksi spasial, rute, zona risiko, safe zone, minimap, dan game mechanic.
